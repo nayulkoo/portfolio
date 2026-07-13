@@ -269,8 +269,8 @@
               </ul>
             </div>
             <dl class="case-outcome-facts">
-              <div><dt>고려한 점</dt><dd>단순 일괄 처리 방식은 구현이 단순하지만 실패 지점과 재처리 범위를 파악하기 어려워, 구성 복잡도 증가를 감수하고 단계별 추적성을 우선했습니다.</dd></div>
-              <div><dt>결과</dt><dd>변경 이력 기반 증분 수집부터 파싱·청킹·임베딩·색인까지 이어지는 데이터 파이프라인을 구축해 검색/RAG 서비스에 활용 가능한 데이터 처리 체계와 재처리 가능한 운영 기반을 마련했습니다.</dd></div>
+              <div><dt>고려한 점</dt><dd><p>단순 일괄 처리 방식은 구현이 단순하지만 실패 지점과 재처리 범위를 파악하기 어려워, 구성 복잡도 증가를 감수하고 단계별 추적성을 우선했습니다.</p></dd></div>
+              <div><dt>결과</dt><dd><p>변경 이력 기반 증분 수집부터 파싱·청킹·임베딩·색인까지 이어지는 데이터 파이프라인을 구축해 검색/RAG 서비스에 활용 가능한 데이터 처리 체계와 재처리 가능한 운영 기반을 마련했습니다.</p></dd></div>
             </dl>
             <div class="tech-groups"><h4>사용 기술</h4><div class="capsule-cloud" aria-label="대표 경험 1 사용 기술"><span>Java</span><span>Spring Boot</span><span>Python</span><span>FastAPI</span><span>RabbitMQ</span><span>Oracle</span><span>MSSQL</span><span>Amazon S3</span><span>PostgreSQL</span><span>OpenSearch</span><span>BGE-M3</span><span>ONNX Runtime</span><span>Docker</span></div></div>
 
@@ -314,8 +314,8 @@
               </ul>
             </div>
             <dl class="case-outcome-facts">
-              <div><dt>고려한 점</dt><dd>표현력을 높일수록 운영 복잡도와 고객별 커스터마이징 범위가 커질 수 있어, 공통 제품 기능으로 흡수할 범위와 개별 요구사항으로 처리할 범위를 구분해야 했습니다.<br>또한 분산 유입되는 요구사항은 Jira 티켓으로 관리해 제품 기능 편입 여부와 개발 일정 영향을 함께 검토했습니다.</dd></div>
-              <div><dt>결과</dt><dd>챗봇 솔루션은 약 <strong>30여 개 고객사</strong>에 도입되며 회사의 핵심 제품으로 성장했습니다.<br>운영자가 복잡한 시나리오를 직접 구성할 수 있는 기능을 제공해 고객별 요구사항 대응 범위를 확대했으며, 생성형 AI 기능을 기존 제품에 통합해 챗봇 활용 범위를 확장했습니다.<br>또한 Jira 기반 요구사항 관리 체계를 정착시켜 기능 검토와 개발 프로세스의 일관성을 높였습니다.</dd></div>
+              <div><dt>고려한 점</dt><dd><p>표현력을 높일수록 운영 복잡도와 고객별 커스터마이징 범위가 커질 수 있어, 공통 제품 기능으로 흡수할 범위와 개별 요구사항으로 처리할 범위를 구분해야 했습니다.</p><p>또한 분산 유입되는 요구사항은 Jira 티켓으로 관리해 제품 기능 편입 여부와 개발 일정 영향을 함께 검토했습니다.</p></dd></div>
+              <div><dt>결과</dt><dd><p>챗봇 솔루션은 약 <strong>30여 개 고객사</strong>에 도입되며 회사의 핵심 제품으로 성장했습니다.</p><p>운영자가 복잡한 시나리오를 직접 구성할 수 있는 기능을 제공해 고객별 요구사항 대응 범위를 확대했으며, 생성형 AI 기능을 기존 제품에 통합해 챗봇 활용 범위를 확장했습니다.</p><p>또한 Jira 기반 요구사항 관리 체계를 정착시켜 기능 검토와 개발 프로세스의 일관성을 높였습니다.</p></dd></div>
             </dl>
             <div class="tech-groups"><h4>사용 기술</h4><div class="capsule-cloud" aria-label="대표 경험 2 사용 기술"><span>Java</span><span>Groovy</span><span>Spring Boot</span><span>MongoDB</span><span>OpenSearch</span><span>BGE-M3</span><span>BGE-Reranker-v2-M3</span><span>Python</span><span>FastAPI</span><span>Ollama</span></div></div>
 
@@ -356,8 +356,8 @@
               </ul>
             </div>
             <dl class="case-outcome-facts">
-              <div><dt>고려한 점</dt><dd>vLLM 전환은 처리량 개선에 유리했지만 구조 복잡도와 운영 고려사항이 늘 수 있었습니다.<br>또한 리랭킹과 평가 루프는 답변 품질 향상에 도움이 되었지만 응답 지연과 운영 비용이 증가할 수 있어 품질과 성능의 균형을 함께 고려했습니다.</dd></div>
-              <div><dt>결과</dt><dd>Ollama 기반 동시 요청 병목을 vLLM 전환으로 완화해 테스트 환경 기준 처리 성능을 기존 대비 <strong>10배 이상 개선</strong>했습니다.<br>또한 RAGAS 기반 평가와 튜닝을 적용해 성능 개선과 답변 품질 향상을 반복적으로 검증할 수 있는 개선 체계를 구축했습니다.</dd></div>
+              <div><dt>고려한 점</dt><dd><p>vLLM 전환은 처리량 개선에 유리했지만 구조 복잡도와 운영 고려사항이 늘 수 있었습니다.</p><p>또한 리랭킹과 평가 루프는 답변 품질 향상에 도움이 되었지만 응답 지연과 운영 비용이 증가할 수 있어 품질과 성능의 균형을 함께 고려했습니다.</p></dd></div>
+              <div><dt>결과</dt><dd><p>Ollama 기반 동시 요청 병목을 vLLM 전환으로 완화해 테스트 환경 기준 처리 성능을 기존 대비 <strong>10배 이상 개선</strong>했습니다.</p><p>또한 RAGAS 기반 평가와 튜닝을 적용해 성능 개선과 답변 품질 향상을 반복적으로 검증할 수 있는 개선 체계를 구축했습니다.</p></dd></div>
             </dl>
             <div class="tech-groups"><h4>사용 기술</h4><div class="capsule-cloud" aria-label="대표 경험 3 사용 기술"><span>Java</span><span>Spring Boot</span><span>Python</span><span>FastAPI</span><span>MongoDB</span><span>OpenSearch</span><span>BGE-M3</span><span>BGE-Reranker-v2-M3</span><span>Ollama</span><span>vLLM</span><span>RAGAS</span></div></div>
 

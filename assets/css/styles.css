@@ -370,13 +370,35 @@ h1 {
 .case-detail li + li { margin-top: 8px; }
 
 .decision-block,
-.case-outcome-facts,
 .tech-groups { margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--line); }
 
-.case-outcome-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-.case-outcome-facts div { display: grid; gap: 9px; }
-.case-outcome-facts dt { color: var(--ink); font-weight: 700; }
-.case-outcome-facts dd { margin: 0; }
+.case-outcome-facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  border-top: 1px solid var(--line);
+}
+
+.case-outcome-facts > div { display: block; padding: 24px 28px 26px 0; }
+
+.case-outcome-facts > div + div {
+  padding-right: 0;
+  padding-left: 28px;
+  border-left: 1px solid var(--line);
+}
+
+.case-outcome-facts dt {
+  color: var(--accent-strong);
+  font-size: .95rem;
+  font-weight: 750;
+  letter-spacing: -.01em;
+}
+
+.case-outcome-facts dd { margin: 12px 0 0; color: var(--muted); line-height: 1.8; }
+.case-outcome-facts dd p { margin: 0; }
+.case-outcome-facts dd p + p { margin-top: 12px; }
 .capsule-cloud, .skill-list { color: var(--muted); font-size: .82rem; }
 .capsule-cloud { margin: 0; line-height: 1.9; }
 
@@ -481,12 +503,17 @@ h1 {
 .section-heading + .case-study { border-top: 1px solid var(--line); }
 .case-study + .case-study { border-top: 1px solid var(--line); }
 .case-meta { display: grid; grid-template-columns: 130px minmax(0, 1fr); gap: 24px; margin-bottom: 22px; }
-.case-meta > span { color: var(--accent); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .72rem; }
+.case-meta > span { color: var(--accent); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .72rem; font-weight: 650; letter-spacing: .03em; }
 .case-meta > strong { font-size: 1rem; }
 .case-body { max-width: 980px; padding-left: 154px; }
 .case-body > h3 { margin: 0; font-size: clamp(1.3rem, 2.5vw, 1.8rem); line-height: 1.22; }
 .case-summary { max-width: 65ch; margin: 14px 0 0; color: var(--muted); }
 .case-body h4 { margin: 0 0 12px; font-size: .92rem; }
+.case-body ul { margin: 0; padding-left: 1.2rem; }
+.case-body li { max-width: 72ch; }
+.case-body li + li { margin-top: 10px; }
+.case-body li::marker { color: var(--accent); }
+.case-body strong { color: var(--accent-strong); font-weight: 750; }
 .case-body .case-grid { margin-top: 34px; }
 .case-body .decision-block,
 .case-body .case-outcome-facts,
@@ -529,10 +556,11 @@ h1 {
   padding: 0 9px;
   border: 1px solid var(--line);
   border-radius: 6px;
-  color: var(--accent);
-  background: color-mix(in srgb, var(--surface) 82%, var(--accent) 18%);
+  color: var(--accent-strong);
+  background: var(--surface);
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: .75rem;
+  font-weight: 650;
   line-height: 1;
 }
 
@@ -638,6 +666,8 @@ h1 {
   .case-toggle { grid-column: 2; grid-row: 1 / span 3; align-self: center; }
   .case-detail { padding: 12px 0 44px; }
   .case-grid, .case-outcome-facts, .capability-grid { grid-template-columns: 1fr; }
+  .case-outcome-facts > div { padding: 22px 0 24px; }
+  .case-outcome-facts > div + div { padding: 24px 0; border-top: 1px solid var(--line); border-left: 0; }
   .impact-grid, .support-grid, .skill-groups { grid-template-columns: 1fr; }
   .impact-card:nth-child(odd), .impact-card:nth-child(even) { padding-inline: 0; border-left: 0; }
   .timeline > li { grid-template-columns: 1fr; gap: 10px; padding: 28px 0; }
