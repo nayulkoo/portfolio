@@ -398,7 +398,6 @@ h1 {
 
 .case-outcome-facts dd { margin: 12px 0 0; color: var(--muted); line-height: 1.8; }
 .case-outcome-facts dd p { margin: 0; }
-.case-outcome-facts dd p + p { margin-top: 12px; }
 .capsule-cloud, .skill-list { color: var(--muted); font-size: .82rem; }
 .capsule-cloud { margin: 0; line-height: 1.9; }
 
